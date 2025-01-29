@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Our About Page - Learn more about CACI Bubiashie Central Assembly, its history, and its devoted congregation. Meet the leadership team and explore our mission to spread faith, love, and hope in Bubiashie and Ghana. Discover our passion for Christ, Soul wining, and teaching the gospel, and how we've become a pillar of spiritual guidance and community in our area.">
+    <link rel="stylesheet" href="About.css">
+    <script src="About.js"></script>
+    <script src="https://kit.fontawesome.com/8fb550408b.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="pictures/FB_IMG_16912567906636524.jpg" type="image/x-icon">
+<title>Bubiashie Central - About</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lunasima&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/8fb550408b.js" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    //jQuery functions to hide and show the div
+    $(document).ready(function () {
+        $("select").change(function () {
+            $(this).find("option:selected").each(function () {
+                var optionValue =$(this).attr("value");
+                if(optionValue) {
+                    $(".box").not("." + optionValue).hide();
+                    $("." + optionValue).show();
+                } else {
+                    $(".box").hide()
+                }
+            });
+        }).change();
+    })
+</script>
+<style>
+  .box {
+      display: none;
+      margin-top: 20px;
+  }
+
+</style>
+</head>
+<body>
+    
+<header>
+
+  <img src="pictures/FB_IMG_16912567906636524.jpg"alt="" class="logo">
+  <div class="title">CAC Bubiashie Central</div>
+  <span onclick="side()">&equiv;</span>
+  <ul>
+  <li><a href="../index.html">HOME</a></li>
+  <li><a id="li" href="About.html">ABOUT</a></li>
+  <li><a href="Sermons.html">SERMONS</a></li>
+  <li><a href="Events.html">EVENTS</a></li>
+  <li class="van" onmousemove="pays()">
+    <a>MEDIA<i class="fas fa-sort-down" style="color: #f1f4f8;margin-left: 7px;vertical-align: middle;display: inline-block;margin-top: -7px;" ></i></a>
+    <div id="terms" onmouseout="led()">
+      
+      <a href="Media.html"><h3>Church Album</h3></a>
+      <a href="Media1.html"><h3>Groups</h3></a>
+      <a href="Video.html"><h3>Videos</h3></a>
+      
+    </div>
+  </li>
+  </ul>
+  </header>
+  <main id="top">
+    
+    <div class="about">
+    <h3>About us</h3>
+  </div>
+  <section class="sub">
+    <h2>
+      Who we are
+    </h2>
+    <p>Christ Apostolic Church Bubiashie Central is a thriving Pentecostal congregation located in the heart of Bubiashie. With a rich history dating back to 1990's, our church is committed to fostering a strong relationship with God, nurturing spiritual growth, and building a close-knit church family.
+
+      Our vibrant worship services, inspiring sermons, and engaging programs cater to people of all ages, backgrounds, and walks of life. At CAC Bubiashie Central, you'll find a welcoming environment where individuals and families can discover and deepen their faith journey together.
+      
+      As a church, we are dedicated to making a positive impact on our local community through various outreach initiatives, charity work, and support programs. Join us every Sunday at 8:00 AM for an uplifting worship experience and connect with like-minded believers during our midweek service on Wednesdays at 6:00 PM.
+      
+      We believe that every person has a unique role to play in God's plan, and we invite you to become a part of our mission to spread love, hope, and the message of Christ's redemption. Come and experience the joy of worship and fellowship at Christ Apostolic Church Bubiashie Central. We look forward to meeting you and growing in faith together!
+      
+    </p>
+    <br>
+    <h2>Our Mission</h2>
+    <p>
+    CAC (International) as part of the body of christ , exist to bring salvation in Christ to all persons in the world 
+    by preaching and teaching the gospel of Jesus Christ as in the Holy Scriptures , the final authority in all
+    matters of faith and conduct , discipline believers towards Christian maturity and worshipping the True God-The Father, Son and Holy Spirit. Its objectives 
+    are threefold namely: spiritual which cover doctrinal issues and social objectives which comprises the activities that contribute to the social and economic 
+    development of its members and other needy groups or the communities
+  </p><br>
+  <h2>Our Vision</h2>
+  <p>Knowing Christ and making Christ-like disciples of all nations, tribes and peoples and constituting 
+    them into bible fellowships for worship, edification and further evangelization
+  </p>
+  </section>
+    <div id="bar">
+      <div id="dem">
+      <h3><a href="../index.html">HOME</a></h3>
+      <h3><a href="About.html">ABOUT</a></h3>
+      <h3><a href="Sermons.html">SERMONS</a></h3>
+      <h3><a href="Events.html">EVENTS</a></h3>
+      <h3><a>MEDIA<i  onclick="media()" class="fas fa-sort-down" style="color: #000;margin-left: 7px;vertical-align: middle;display: inline-block;margin-top: -7px;" ></i></a></h3>
+      <div id="med">
+        <h3><a href="Media.html">Church Album</a></h3>
+        <h3><a href="Media1.html">Groups</a></h3>
+        <h3><a href="Video.html">Videos</a></h3>
+      </div>
+      <h3><a>GIVE<i onclick="deal()" class="fas fa-sort-down" style="color: #000;margin-left: 7px;vertical-align: middle;display: inline-block;margin-top: -7px;" ></i></a></h3>
+      <div id="meds">
+        <h3><a href="payment.html">Live Offering</a></h3>
+        <h3><a href="payment1.html">Tithes</a></h3>
+        <h3><a href="payment2.html">Partnership</a></h3>
+        <h3><a href="payment3.html">Projects</a></h3>
+      </div>
+    </div>
+    </div>
+
+  <div class="about">
+    <h3>Our Leadership</h3>
+  </div>
+  <section class="gen">
+<section id="lead">
+  <div id="tre" onclick="talk(),news()">Church Executives</div>
+  <div id="tree" onclick="peed(),man()">Youth Ministry</div>
+  <div id="treee" onclick="speak(),men()">Men's Ministry</div>
+  <div id="treeee" onclick="spea(),mens()">Women's Ministry</div>
+</section>
+<!--Church Executives-->
+<div id="talk">
+  <div class="som">
+      <div>
+       <img src="IMG-20230608-WA0005.jpg"alt="">
+       <h4>Rev.Seth Frimpong</h4>
+      <h5>Head Pastor</h5>
+      </div>
+
+      <div >
+       <img src="IMG-20230608-WA0005.jpg"alt="">
+       <h4>Eld. Moses Collins Gyimah</h4>
+      <h5>Circuit Elder</h5></div>
+      <div >
+       <img src="IMG-20230608-WA0005.jpg"alt="">
+       <h4>Eld. Ebenezer Sarpong</h4>
+      <h5>Secretary</h5></div>
+      <div>
+       <img src="IMG-20230608-WA0005.jpg"alt="">
+       <h4>Eld. Victor Ashong</h4>
+      <h5>Christian Education</h5></div>
+      <div >
+       <img src="IMG-20230608-WA0005.jpg"alt="">
+       <h4>Eld. Isaac Boateng</h4>
+      <h5>Local Elder</h5></div>
+      <div>
+       <img src="IMG-20230608-WA0005.jpg"alt="">
+       <h4>Eld. Irenus Agyekum</h4>
+      <h5>Finance</h5></div>
+      <div>
+       <img src="IMG-20230608-WA0005.jpg"alt="">
+       <h4>Eld. Samuel Tetteh</h4>
+      <h5>Counsellor</h5></div>
+      <div >
+       <img src="IMG-20230608-WA0005.jpg" alt="">
+       <h4>Eld. Sam Newlove Ohene</h4>
+      <h5>Elder</h5></div>
+      <div>
+       <img src="IMG-20230608-WA0005.jpg" alt="">
+       <h4>Eld. Ahenkorah Albert</h4>
+      <h5>Elder</h5></div>
+  </div>
+  </div>
+
+<!--Men's Fellowship-->
+<div id="row">
+  <div class="men">
+    <div>
+      <img src="IMG-20230608-WA0005.jpg"alt="">
+      <h4>Seth Frimpongs</h4>
+     <h5>Head Pastor</h5>
+     </div>
+     <div>
+      <img src="IMG-20230608-WA0005.jpg"alt="">
+      <h4>Rev.Seth Frimpong</h4>
+     <h5>Head Pastor</h5></div>
+     <div >
+      <img src="IMG-20230608-WA0005.jpg"alt="">
+      <h4>Rev.Seth Frimpong</h4>
+     <h5>Head Pastor</h5></div>
+  </div>
+</div>
+
+<!--Women's Fellowship-->
+<div id="rows">
+  <div class="mens">
+    <div>
+      <img src="IMG-20230608-WA0005.jpg"alt="">
+      <h4>Dec. Victoria Quarshie</h4>
+     <h5>Leader</h5>
+     </div>
+     <div>
+      <img src="IMG-20230608-WA0005.jpg"alt="">
+      <h4>Dec. Dorcas Boakye</h4>
+     <h5>Secretary</h5></div>
+     <div >
+      <img src="IMG-20230608-WA0005.jpg"alt="">
+      <h4>Dec. Ernestina Arthur</h4>
+     <h5>Financial Head</h5></div>
+    
+  </div>
+</div>
+
+<!--Youth Ministry-->
+<div id="mow">
+  <div class="wee">
+    <div>
+      <img src="IMG-20230608-WA0005.jpg"alt="">
+      <h4>Dec. Solomon Sarpong</h4>
+     <h5>President</h5>
+     </div>
+     <div>
+      <img src="IMG-20230608-WA0005.jpg"alt="">
+      <h4>Dec. Leticia Asare</h4>
+     <h5>Secretary</h5></div>
+     <div >
+      <img src="IMG-20230608-WA0005.jpg"alt="">
+      <h4>Evan. Emmanuel Kuma</h4>
+     <h5>Organizer</h5></div>
+     <div >
+      <img src="IMG-20230608-WA0005.jpg"alt="">
+      <h4>Mad. Gloria Letsa</h4>
+     <h5>Teacher</h5></div>
+     <div>
+      <img src="IMG-20230608-WA0005.jpg"alt="">
+      <h4>Mad. Beatrice Betty</h4>
+     <h5>Teacher</h5></div>
+     <div >
+      <img src="IMG-20230608-WA0005.jpg"alt="">
+      <h4>Mad. Harriet Amponsah</h4>
+     <h5>Teacher</h5></div>
+     <div>
+      <img src="IMG-20230608-WA0005.jpg"alt="">
+      <h4>Mad.Priscilla Aryetey</h4>
+     <h5>Teacher</h5></div>
+     <div >
+      <img src="IMG-20230608-WA0005.jpg"alt="">
+      <h4>Sir. Jacob Aryetey</h4>
+     <h5>Teacher</h5></div>
+     <div>
+      <img src="IMG-20230608-WA0005.jpg" alt="">
+      <h4>Sir. Ishmael Quaye</h4>
+     <h5>Teacher</h5></div>
+  </div>
+</div>
+</section>
+<section class="sec">
+  <select>
+    <option value="red">Church Executives</option>
+    <option value="green">Youth Ministry</option>
+    <option value="blue">Women's Ministry</option>
+    <option value="brown">Men's Ministry</option>
+  </select>
+  <!--Church Executives-->
+<div class="red box">
+  <div class="som">
+    <div>
+      <img src="IMG-20230608-WA0005.jpg"alt="">
+      <h4>Rev.Seth Frimpong</h4>
+     <h5>Head Pastor</h5>
+     </div>
+
+     <div >
+      <img src="IMG-20230608-WA0005.jpg"alt="">
+      <h4>Eld. Moses Collins Gyimah</h4>
+     <h5>Circuit Elder</h5></div>
+     <div >
+      <img src="IMG-20230608-WA0005.jpg"alt="">
+      <h4>Eld. Ebenezer Sarpong</h4>
+     <h5>Secretary</h5></div>
+     <div>
+      <img src="IMG-20230608-WA0005.jpg"alt="">
+      <h4>Eld. Victor Ashong</h4>
+     <h5>Christian Education</h5></div>
+     <div >
+      <img src="IMG-20230608-WA0005.jpg"alt="">
+      <h4>Eld. Isaac Boateng</h4>
+     <h5>Local Elder</h5></div>
+     <div>
+      <img src="IMG-20230608-WA0005.jpg"alt="">
+      <h4>Eld. Irenus Agyekum</h4>
+     <h5>Finance</h5></div>
+     <div>
+      <img src="IMG-20230608-WA0005.jpg"alt="">
+      <h4>Eld. Samuel Tetteh</h4>
+     <h5>Counsellor</h5></div>
+     <div >
+      <img src="IMG-20230608-WA0005.jpg" alt="">
+      <h4>Eld. Sam Newlove Ohene</h4>
+     <h5>Elder</h5></div>
+     <div>
+      <img src="IMG-20230608-WA0005.jpg" alt="">
+      <h4>Eld. Ahenkorah Albert</h4>
+     <h5>Elder</h5></div>
+      </div>
+  </div>
+
+<!--Youth Ministry-->
+<div class="green box">
+  <div class="men">
+        <div>
+          <img src="IMG-20230608-WA0005.jpg"alt="">
+          <h4>Dec. Solomon Sarpong</h4>
+         <h5>President</h5>
+         </div>
+         <div>
+          <img src="IMG-20230608-WA0005.jpg"alt="">
+          <h4>Dec. Leticia Asare</h4>
+         <h5>Secretary</h5></div>
+         <div >
+          <img src="IMG-20230608-WA0005.jpg"alt="">
+          <h4>Evan. Emmanuel Kuma</h4>
+         <h5>Organizer</h5></div>
+         <div >
+          <img src="IMG-20230608-WA0005.jpg"alt="">
+          <h4>Mad. Gloria Letsa</h4>
+         <h5>Teacher</h5></div>
+         <div>
+          <img src="IMG-20230608-WA0005.jpg"alt="">
+          <h4>Mad. Beatrice Betty</h4>
+         <h5>Teacher</h5></div>
+         <div >
+          <img src="IMG-20230608-WA0005.jpg"alt="">
+          <h4>Mad. Harriet Amponsah</h4>
+         <h5>Teacher</h5></div>
+         <div>
+          <img src="IMG-20230608-WA0005.jpg"alt="">
+          <h4>Mad.Priscilla Aryetey</h4>
+         <h5>Teacher</h5></div>
+         <div >
+          <img src="IMG-20230608-WA0005.jpg"alt="">
+          <h4>Sir. Jacob Aryetey</h4>
+         <h5>Teacher</h5></div>
+         <div>
+          <img src="IMG-20230608-WA0005.jpg" alt="">
+          <h4>Sir. Ishmael Quaye</h4>
+         <h5>Teacher</h5></div>
+  </div>
+</div>
+
+<!--Men's Fellowship-->
+<div class="brown box">
+  <div class="men">
+    <div>
+      <img src="IMG-20230608-WA0005.jpg"alt="">
+      <h4>Seth Frimpongs</h4>
+     <h5>Head Pastor</h5>
+     </div>
+     <div>
+      <img src="IMG-20230608-WA0005.jpg"alt="">
+      <h4>Rev.Seth Frimpong</h4>
+     <h5>Head Pastor</h5></div>
+     <div >
+      <img src="IMG-20230608-WA0005.jpg"alt="">
+      <h4>Rev.Seth Frimpong</h4>
+     <h5>Head Pastor</h5></div>
+     
+</div>
+</div>
+<!--Women's Fellowship-->
+<div class="blue box">
+  <div class="mens">
+    <div>
+      <img src="IMG-20230608-WA0005.jpg"alt="">
+      <h4>Dec. Victoria Quarshie</h4>
+     <h5>Leader</h5>
+     </div>
+     <div>
+      <img src="IMG-20230608-WA0005.jpg"alt="">
+      <h4>Dec. Dorcas Boakye</h4>
+     <h5>Secretary</h5></div>
+     <div >
+      <img src="IMG-20230608-WA0005.jpg"alt="">
+      <h4>Dec. Ernestina Arthur</h4>
+     <h5>Financial Head</h5></div>
+   
+  </div>
+</div>
+</section>
+  </main>
+  
+  <footer>
+    <h3>Subscribe to our Newsletter</h3>
+    <h5>Keep up to date with the daily information and updates about your church</h5>
+    <form  action='https://forms.zohopublic.com/cacibubiashiecentralassembly/form/email/formperma/U1VLqWiFmSTEG8C_jNT9FMogX095J27plfJfzadkOCc/htmlRecords/submit' name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data'>
+      <input type="email" name="Email" placeholder="Enter Your e-mail">
+      <button type="submit"><i class="fas fa-arrow-right" style="color: #e0e2e6;"></i></button>
+      </form>
+      <hr>
+      <a href="#top"><span title="Go Top"><i class="fas fa-long-arrow-alt-up" style="color: #02193b;"></i></span></a>
+    <div class="unit">
+      <div class="tea">
+        <p>Join Us at CAC Bubiashie Central!
+          We warmly welcome you to experience the love, fellowship, and spiritual growth at Christ Apostolic Church Bubiashie Central. 
+          Our doors are open to all seeking a deeper connection with God and a vibrant church community. 
+          Join us for uplifting worship, engaging teachings, and a warm family atmosphere.
+           Let's journey together in faith!<br><br>
+           Sunday Worship: 8:00 AM<br>
+Midweek Service: Wednesdays, 6:00 PM<br>
+Location: Behind the Allied Filling Station, Kotey Street , Accra, Ghana<br>
+Contact: 059 737 7503<br>
+Come and be a part of our faith-filled community!
+    </p>
+  </div>
+  <div class="univ">
+    <i>Our Social Media Handles</i><br>
+    <a href="https://www.facebook.com/profile.php?id=100067356761887&mibextid=ZbWKwL"><i class="fab fa-facebook-f" style="color: #f7f9fd;"></i></a>
+    <a href="https://instagram.com/cac_bubiashiecentral?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fab fa-instagram" style="color: #f1f4f9;"></i></a>
+    <a href="https://t.me/+qJzuMbe7NHNiMGRk"><i class="fab fa-telegram-plane" style="color: #f0f2f4;"></i></a>
+    <a href="https://twitter.com/bubiashie"><i class="fab fa-twitter-square"></i></a>
+  </div>
+    </div>
+  </footer>
+</body>
+</html> 

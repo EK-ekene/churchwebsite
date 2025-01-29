@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Our Sermon Collection - Delve into a treasure trove of inspiring sermons at Caci Bubiashie Central Assembly. Find guidance and wisdom on religious fellowship, Jesus Christ, and discipleship through our thought-provoking messages. Join us in exploring the profound teachings and messages of faith that have touched countless lives in our community.">
+    
+    <script src="https://kit.fontawesome.com/8fb550408b.js" crossorigin="anonymous"></script>
+    
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lunasima&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+<title>Bubiashie Central - Sermons</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    //jQuery functions to hide and show the div
+    $(document).ready(function () {
+        $("select").change(function () {
+            $(this).find("option:selected").each(function () {
+                var optionValue =$(this).attr("value");
+                if(optionValue) {
+                    $(".box").not("." + optionValue).hide();
+                    $("." + optionValue).show();
+                } else {
+                    $(".box").hide()
+                }
+            });
+        }).change();
+    })
+</script>
+<style>
+  .box {
+      display: none;
+      margin-top: 20px;
+  }
+
+</style>
+<link rel="stylesheet" href="Sermons.css">
+<script src="Sermons.js"></script>
+</head>
+<body>
+    
+<header>
+
+  <img src="pictures/FB_IMG_16912567906636524.jpg"alt="" class="logo">
+  <div class="title">CAC Bubiashie Central</div>
+  <span onclick="side()">&equiv;</span>
+  <ul>
+  <li><a  href="../index.html">HOME</a></li>
+  <li><a href="About.html">ABOUT</a></li>
+  <li><a id="li" href="Sermons.html">SERMONS</a></li>
+  <li><a href="Events.html">EVENTS</a></li>
+  <li class="van" onmousemove="pays()">
+    <a>MEDIA<i class="fas fa-sort-down" style="color: #f1f4f8;margin-left: 7px;vertical-align: middle;display: inline-block;margin-top: -7px;" ></i></a>
+    <div id="terms" onmouseout="led()">
+      
+      <a href="Media.html"><h3>Church Album</h3></a>
+      <a href="Media1.html"><h3>Groups</h3></a>
+      <a href="Video.html"><h3>Videos</h3></a>
+      
+    </div>
+  </li>
+  </ul>
+  
+  </header>
+  <main id="top">
+      <div id="bar">
+        <div id="dem">
+        <h3><a href="../index.html">HOME</a></h3>
+        <h3><a href="About.html">ABOUT</a></h3>
+        <h3><a href="Sermons.html">SERMONS</a></h3>
+        <h3><a href="Events.html">EVENTS</a></h3>
+        <h3><a>MEDIA<i  onclick="media()" class="fas fa-sort-down" style="color: #000;margin-left: 7px;vertical-align: middle;display: inline-block;margin-top: -7px;" ></i></a></h3>
+      <div id="med">
+        <h3><a href="Media.html">Church Album</a></h3>
+        <h3><a href="Media1.html">Groups</a></h3>
+        <h3><a href="Video.html">Videos</a></h3>
+      </div>
+      <h3><a>GIVE<i onclick="deal()" class="fas fa-sort-down" style="color: #000;margin-left: 7px;vertical-align: middle;display: inline-block;margin-top: -7px;" ></i></a></h3>
+      <div id="meds">
+        <h3><a href="payment.html">Live Offering</a></h3>
+        <h3><a href="payment1.html">Tithes</a></h3>
+        <h3><a href="payment2.html">Partnership</a></h3>
+        <h3><a href="payment3.html">Projects</a></h3>
+      </div>
+      </div>
+      </div>
+
+  
+    <h1>Our Current Sermon</h1>
+    <div class="flex">
+      <div>
+        <h2>The Power of waiting on God</h2>
+        <p>"
+          Gathered brethren, in the symphony of our existence, have you pondered the resonating power that dwells in the sacred art of waiting on God? Today, let us embark on a celestial odyssey, where patience becomes the portal, unlocking the divine realms and ushering us into the majestic presence of the Almighty"
+    </p>
+    <br>
+    <h3><a href="Sermons/2024/Jan7.html">View Sermon</a></h3>
+    </div>
+      <div class="img">
+        <img src="Sermons/2024/Jan7.jpeg"alt="" width="350px" height="300px" style="width: 100%; border-radius: 10px;">
+      </div>
+    </div>
+    <h1>Sermon Archives</h1>
+    <section id="you">
+    <section class="dead">
+      <div id="tre" onclick="talk() ,news()">Recent</div>
+      <div id="tree" onclick="speak(),man()">Speaker</div>
+      <div><input type="text" id="mySearch" onkeyup="myFunction(),mySister()" placeholder="  Search archives.."></div>
+    </section>
+   
+    
+  <div id="talk">
+   <div id="men">
+      <div>
+        <img src="Sermons/2023/Dec25.jpg"alt="" width="100%" height="200px" style="border-radius: 10px;">
+        <p><a href="Sermons/2023/Dec25.html">
+          A Blessing To A Nation</a></p></div>
+          <div>
+      <img src="Sermons/2023/Dec3.jpg"alt="" width="100%" height="200px" style="border-radius: 10px;">
+      <p><a href="Sermons/2023/Dec3.html">The Basis For Giving Unto God</a></p></div>
+    <div>
+      <img src="Sermons/2023/Nov26.jpg"alt="" width="100%" height="200px" style="border-radius: 10px;">
+      <p><a href="Sermons/2023/Nov26.html">Building The Church</a></p></div>
+    <div>
+      <img src="Sermons/2023/Nov19.jpg"alt="" width="100%" height="200px" style="border-radius: 10px;">
+      <p><a href="Sermons/2023/Nov19.html">Our Role In God's Plan On Earth</a></p></div>
+    <div>
+      <img src="Sermons/2023/Nov12.jpg"alt="" width="100%" height="200px" style="border-radius: 10px;">
+      <p><a href="Sermons/2023/Nov12.html">Shall We Continue In Sin?</a></p></div>
+    <div>
+      <img src="Sermons/2023/Nov5.jpg"alt="" width="100%" height="200px" style="border-radius: 10px;">
+      <p><a href="Sermons/2023/Nov5.html">My Child My Destiny</a></p></div>
+  
+    <div>
+      <img src="Sermons/2023/Oct22.jpg"alt="" width="100%" height="200px" style="border-radius: 10px;">
+      <p><a href="Sermons/2023/Oct22.html">The Never Ending Duties Of A Priest</a></p>
+     </div> 
+    <div>
+      <img src="Sermons/2023/Oct15.jpg"alt="" width="100%" height="200px" style="border-radius: 10px;">
+      <p><a href="Sermons/2023/Oct15.html">God's Gifts Always Find Their Places</a></p>
+    </div>
+    <div >
+      <img src="Sermons/2023/Oct8.jpg"alt="" width="100%" height="200px" style="border-radius: 10px;">
+      <p><a href="Sermons/2023/Oct8.html">Man Of God</a></p>
+    </div>
+   
+ 
+  </div>
+   <div id="page">
+    <h3><a href="more.html">More</a></h3>
+   </div>
+  </div>
+<div id="row">
+  <div>
+    <details>
+      <summary>Rev Seth Frimpong</summary>
+      <p><a href="Sermons/2023/August10.html">Day 2:Prophetical Convocation</a></p>
+      <p><a href="Sermons/2023/August9.html">Day 1:Prophetical Convocation</a></p>
+      <p><a href="Sermons/2023/August13.html">Day 5:Prophetical Convocation</a></p>
+      <p><a href="Sermons/2023/July9.html">Perfection</a></p>
+      <p><a href="Sermons/2023/July16.html">Perfected In Christ</a></p>
+      <p><a href="Sermons/2023/July30.html">The Rod Of Aaron</a></p>
+      <p><a href="Sermons/2023/Sept3.html">Our Stewardship Over Our Bodies</a></p>
+      <p><a href="Sermons/2023/Sept10.html">Our Bodies, The Temple Of The Holy Spirit</a></p>
+      <p><a href="Sermons/2023/Oct22.html">The Never Ending Duties Of A Priest</a></p>
+      <p><a href="Sermons/2023/Nov5.html">My Child My Destiny</a></p>
+      <p><a href="Sermons/2023/Nov19.html">Our Role In God's Plan On Earth</a></p>
+      <p><a href="Sermons/2023/Dec25.html">A Blessing To A Nation</a></p>
+    </details>
+    <details>
+      <summary>Rev Daniel Tetteh Bredu</summary>
+      <p><a href="Sermons/2023/August6.html">Hold on to the Faith</a></p>
+    </details>
+    <details>
+      <summary>Aps. Prosper Dogbe Agbaglo</summary>
+      <p><a href="Sermons/2023/August11.html">Day 3:Prophetical Convocation</a></p>
+    </details>
+    <details>
+      <summary>Elder Kenneth Andoh</summary>
+      <p><a href="Sermons/2023/August20.html">God Is Faithful</a></p>
+    </details>
+    <details>
+      <summary>Rev. Emmanuel Awortwe</summary>
+      <p><a href="Sermons/2023/Sept17.html">Led By Pillar Of Fire</a></p>
+    </details>
+    <details>
+      <summary>Ps. David Asante Asiedu</summary>
+      <p><a href="Sermons/2023/Sept24.html">The Christian, Prayer and Productivity</a></p>
+      <p><a href="Sermons/2023/Oct8.html">The Man Of God</a></p>
+    </details>
+    <details>
+      <summary>Elder Collins Obeng Gyimah</summary>
+      <p><a href="Sermons/2023/Nov12.html">Shall We Continue In Sin?</a></p>
+      <p><a href="Sermons/2023/Oct1.html">Beware Of Friends</a></p>
+    </details>
+    <details>
+      <summary>Rev Daniel Tei Kwao</summary>
+      <p><a href="Sermons/2023/Oct15.html">God's Gifts Always Find Their Places</a></p>
+    </details>
+    <details>
+      <summary>Apostle Joseph Kweku Arhin (Accra West Territorial Head)</summary>
+      <p><a href="Sermons/2023/Dec3.html">The Basis For Giving Unto God</a></p>
+    </details>
+    <details>
+      <summary>Rev. Augustine Amankwah (Cote d'voire)summary>
+      <p><a href="Sermons/2023/Dec3.html">The Power of waiting on God</a></p>
+    </details>
+  </div>
+</div>
+</section>
+
+
+<section class="code">
+  <div class="play">
+    <select>
+      <option value="green" selected>Recent</option>
+      <option value="red">Speaker</option>
+    </select>
+    <input type="text" id="mySea" onkeyup="myFunct(), mySis()" placeholder="Search media..">
+  </div>
+
+  <div class="green box">
+    <div id="eat">
+      <div>
+        <img src="Sermons/2023/Dec25.jpg"alt="" width="100%" height="200px" style="border-radius: 10px;">
+        <p><a href="Sermons/2023/Dec25.html">
+          A Blessing To A Nation</a></p></div>
+      <div>
+        <img src="Sermons/2023/Dec3.jpg"alt="" width="100%" height="200px" style="border-radius: 10px;">
+        <p><a href="Sermons/2023/Dec3.html">The Basis For Giving Unto God</a></p></div>
+      <div>
+        <img src="Sermons/2023/Nov26.jpg"alt="" width="100%" height="200px" style="border-radius: 10px;">
+        <p><a href="Sermons/2023/Nov26.html">Building The Church</a></p></div>
+      <div>
+        <img src="Sermons/2023/Nov19.jpg"alt="" width="100%" height="200px" style="border-radius: 10px;">
+        <p><a href="Sermons/2023/Nov19.html">Our Role In God's Plan On Earth</a></p></div>
+      <div>
+        <img src="Sermons/2023/Nov12.jpg"alt="" width="100%" height="200px" style="border-radius: 10px;">
+        <p><a href="Sermons/2023/Nov12.html">Shall We Continue In Sin?</a></p></div>
+      <div>
+        <img src="Sermons/2023/Nov5.jpg"alt="" width="100%" height="200px" style="border-radius: 10px;">
+        <p><a href="Sermons/2023/Nov5.html">My Child My Destiny</a></p></div>
+    
+      <div>
+        <img src="Sermons/2023/Oct22.jpg"alt="" width="100%" height="200px" style="border-radius: 10px;">
+        <p><a href="Sermons/2023/Oct22.html">The Never Ending Duties Of A Priest</a></p>
+       </div> 
+      <div>
+        <img src="Sermons/2023/Oct15.jpg"alt="" width="100%" height="200px" style="border-radius: 10px;">
+        <p><a href="Sermons/2023/Oct15.html">God's Gifts Always Find Their Places</a></p>
+      </div>
+      <div >
+        <img src="Sermons/2023/Oct8.jpg"alt="" width="100%" height="200px" style="border-radius: 10px;">
+        <p><a href="Sermons/2023/Oct8.html">Man Of God</a></p>
+      </div>
+      
+ 
+  </div>
+  <div id="page">
+    <h3><a href="more.html">More</a></h3>
+   </div>
+  </div>
+ <div class="red box">
+  <div id="meet">
+    <details>
+      <summary>Rev Seth Frimpong</summary>
+      <p><a href="Sermons/2023/August10.html">Day 2:Prophetical Convocation</a></p>
+      <p><a href="Sermons/2023/August9.html">Day 1:Prophetical Convocation</a></p>
+      <p><a href="Sermons/2023/August13.html">Day 5:Prophetical Convocation</a></p>
+      <p><a href="Sermons/2023/July9.html">Perfection</a></p>
+      <p><a href="Sermons/2023/July16.html">Perfected In Christ</a></p>
+      <p><a href="Sermons/2023/July30.html">The Rod Of Aaron</a></p>
+      <p><a href="Sermons/2023/Sept3.html">Our Stewardship Over Our Bodies</a></p>
+      <p><a href="Sermons/2023/Sept10.html">Our Bodies, The Temple Of The Holy Spirit</a></p>
+      <p><a href="Sermons/2023/Oct22.html">The Never Ending Duties Of A Priest</a></p>
+      <p><a href="Sermons/2023/Nov5.html">My Child My Destiny</a></p>
+      <p><a href="Sermons/2023/Nov19.html">Our Role In God's Plan On Earth</a></p>
+      <p><a href="Sermons/2023/Dec25.html">A Blessing To A Nation</a></p>
+    </details>
+    <details>
+      <summary>Rev Daniel Tetteh Bredu</summary>
+      <p><a href="Sermons/2023/August6.html">Hold on to the Faith</a></p>
+    </details>
+    <details>
+      <summary>Aps. Prosper Dogbe Agbaglo</summary>
+      <p><a href="Sermons/2023/August11.html">Day 3:Prophetical Convocation</a></p>
+    </details>
+    <details>
+      <summary>Elder Kenneth Andoh</summary>
+      <p><a href="Sermons/2023/August20.html">God Is Faithful</a></p>
+    </details>
+    <details>
+      <summary>Rev. Emmanuel Awortwe</summary>
+      <p><a href="Sermons/2023/Sept17.html">Led By Pillar Of Fire</a></p>
+    </details>
+    <details>
+      <summary>Ps. David Asante Asiedu</summary>
+      <p><a href="Sermons/2023/Sept24.html">The Christian, Prayer and Productivity</a></p>
+      <p><a href="Sermons/2023/Oct8.html">The Man Of God</a></p>
+    </details>
+    <details>
+      <summary>Elder Collins Obeng Gyimah</summary>
+      <p><a href="Sermons/2023/Nov12.html">Shall We Continue In Sin?</a></p>
+      <p><a href="Sermons/2023/Oct1.html">Beware Of Friends</a></p>
+    </details>
+    <details>
+      <summary>Rev Daniel Tei Kwao</summary>
+      <p><a href="Sermons/2023/Oct15.html">God's Gifts Always Find Their Places</a></p>
+    </details>
+    <details>
+      <summary>Apostle Joseph Kweku Arhin (Accra West Territorial Head)</summary>
+      <p><a href="Sermons/2023/Dec3.html">The Basis For Giving Unto God</a></p>
+    </details>
+    <details>
+      <summary>Rev. Augustine Amankwah (Cote d'voire)summary>
+      <p><a href="Sermons/2023/Dec3.html">The Power of waiting on God</a></p>
+    </details>
+ </div>
+</div>
+  </section>
+  </main>
+  <footer>
+    <h3>Subscribe to our Newsletter</h3>
+    <h5>Keep up to date with the daily information and updates about your church</h5>
+    <form  action='https://forms.zohopublic.com/cacibubiashiecentralassembly/form/email/formperma/U1VLqWiFmSTEG8C_jNT9FMogX095J27plfJfzadkOCc/htmlRecords/submit' name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data'>
+      <input type="email" name="Email" placeholder="Enter Your e-mail">
+      <button type="submit"><i class="fas fa-arrow-right" style="color: #e0e2e6;"></i></button>
+      </form>
+      <hr>
+      <a href="#home"><span title="Go Top"><i class="fas fa-long-arrow-alt-up" style="color: #02193b;"></i></span></a>
+    <div class="unit">
+      <div class="tea">
+        <p>Join Us at CAC Bubiashie Central!
+          We warmly welcome you to experience the love, fellowship, and spiritual growth at Christ Apostolic Church Bubiashie Central. 
+          Our doors are open to all seeking a deeper connection with God and a vibrant church community. 
+          Join us for uplifting worship, engaging teachings, and a warm family atmosphere.
+           Let's journey together in faith!<br><br>
+           Sunday Worship: 8:00 AM<br>
+    Midweek Service: Wednesdays, 6:00 PM<br>
+    Location: Behind the Allied Filling Station, Kotey Street , Accra, Ghana<br>
+    Contact: 059 737 7503<br>
+    Come and be a part of our faith-filled community!
+        </p>
+      </div>
+      <div class="univ">
+        <i>Our Social Media Handles</i><br>
+        <a href="https://www.facebook.com/profile.php?id=100067356761887&mibextid=ZbWKwL"><i class="fab fa-facebook-f" style="color: #f7f9fd;"></i></a>
+        <a href="https://instagram.com/cac_bubiashiecentral?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fab fa-instagram" style="color: #f1f4f9;"></i></a>
+        <a href="https://t.me/+qJzuMbe7NHNiMGRk"><i class="fab fa-telegram-plane" style="color: #f0f2f4;"></i></a>
+        <a href="https://twitter.com/bubiashie"><i class="fab fa-twitter-square"></i></a>
+      </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

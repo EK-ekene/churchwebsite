@@ -1,0 +1,200 @@
+<!Doctype html>
+<html lang="en">
+<head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Support Our Ministry - Visit our Online Projects Collection Page and contribute to caci bubiashie central assembly's mission. Your generous donations help us continue our vital work in togetherness, and spreading love. Make a difference today and be a part of our mission.">
+      <title>CACI Bubiashie Central | Partnership Payment Page</title>
+      <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <style>
+        body{
+           background: rgb(1, 1, 43);
+           font-family: Nunito,sans-serif;
+           font-size: .9rem;
+           font-weight: 400;
+           line-height: 1.6;
+           color: #212529;
+        }
+        #company-name{
+         color: white;
+        }
+        #page-name{
+         color: white;
+        }
+        .company-name{
+         color: white;
+        }
+        .form-control {
+           display: block;
+           height: 35px;
+           font-size: 14px;
+           width: 100%;
+           line-height: 35px;
+           padding: 0 10px;
+           border: solid 1px #cccccc !important;
+           border-radius: 2px !important;
+           outline: none !important;
+        }
+        .form-control:active, .form-control:active, .form-control:focus, .form-control:focus {
+           border-color: #3676C8 !important;
+        }
+        .element-label {
+           font-size: 13px;
+           font-weight: bold;
+           line-height: 2.5em;
+        }
+        .payment-form {
+           padding: 20px;
+           border: solid 1px #eaeaea;
+           border-radius: 4px;
+           background: #fbfbfb;
+        }
+        .paystack-color-bar {
+           height: 2px;
+           width: 100%;
+           z-index: 10;
+           position: fixed;
+           top: 0;
+           background: linear-gradient(to right, #44b669 0%, #09a5db 100%);
+           background: -webkit-linear-gradient(to right, #44b669 0%, #09a5db 100%);
+           background: -webkit-gradient(to right, #44b669 0%, #09a5db 100%);
+        }
+        .paystack-container .paystack-page .header .page-description {
+           margin: 20px 0 0;
+           padding: 0 15px;
+        }
+        .page-description {
+           font-size: 14px;
+           color: white;
+        }
+        .header {
+           display: inline-block;
+           width: 100%;
+           margin: 30px 0;
+           text-align: center;
+        }
+        .header .page-name {
+           font-size: 18px;
+           font-weight: normal;
+           margin: 20px auto 0;
+           width: 80%;
+           line-height: 1.3;
+        }
+        .header .company-name {
+           color: #777;
+           margin: 5px auto 0;
+           font-size: 12px;
+           text-transform: uppercase;
+           letter-spacing: 1px;
+        }
+        .paystack-footer {
+           width: 300px;
+           max-width: 100%;
+           font-size: 11px;
+           text-transform: uppercase;
+           margin: 40px auto;
+           text-align: center;
+           opacity: .7;
+           clear: both;
+        }
+        .paystack-footer img {
+           width: 200px;
+        }
+        #page{
+         color: #fff;
+        }
+        </style>
+</head>
+<body>
+<div class="paystack-color-bar"></div>
+   <div class="container">
+      <div class="row">
+         <div class="col-md-5 offset-md-4">
+            <div class="header">
+              <div class="page-info">
+                 <h3 id="page-name" class="page-name">Bubiashie Central Assembly</h3>
+                 <p class="company-name">:<span id="company-name">Payment Platform</span></p>
+              </div>
+              <div class="page-description">
+                 <span id="page-description">Please provide all the necessary information and enter any email address 
+                  of your choice
+                 </span>
+              </div>
+            </div>
+<form  id="paymentForm" class="payment-form">
+               <div class="form-group">
+                  <div class="row">
+                     <div class="col-md-6">
+                        <div class="element-label"><span>First Name</span></div>
+                        <input type="text" id="first-name" class="form-control">
+                     </div>
+                     <div class="col-md-6">
+                        <div class="element-label"><span>Last Name</span></div>
+                        <input type="text" id="last-name" class="form-control">
+                     </div>
+                  </div>
+               </div>
+               <div class="form-group">
+                  <div class="element-label"><span>Email</span></div>
+                  <input type="text" id="email-address" class="form-control">
+               </div>
+               <div class="form-group">
+                  <div class="row">
+                     <div class="col-md-6">
+                        <div class="element-label"><span>Currency</span></div>
+                        <select class="form-control" disabled="true">
+                            <option value="GHS">GHS</option>
+                        </select>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="element-label"><span>Amount</span></div>
+                        <input type="text"  id="amount"class="form-control">
+                     </div>
+                 </div>
+              </div>
+              <div class="form-group">
+                  <button class="btn btn-primary" type="submit" onclick="payWithPaystack()">Pay Now</button>
+                  
+             </div>
+          </form>
+        </div>
+      </div>
+   </div>
+   <script src="https://js.paystack.co/v1/inline.js"></script>
+<script>
+var paymentForm = document.getElementById('paymentForm');
+paymentForm.addEventListener("submit", payWithPaystack, false);
+function payWithPaystack(e) {
+e.preventDefault();
+var email = document.getElementById("email-address").value;
+var amount = document.getElementById("amount").value;
+var firstname = document.getElementById("first-name").value;
+var lastname = document.getElementById("last-name").value;
+if(email && amount && firstname && lastname){
+var handler = PaystackPop.setup({
+key: 'pk_live_b2c8706d159d9230ec35f8495f165e8d0feb6f51', // Replace with your public key
+email: email,
+amount: amount*100,
+firstname: firstname,
+lastname: lastname,
+currency:"GHS",
+ref: 'Partnership'+Math.floor((Math.random() * 100) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
+// label: "Optional string that replaces customer email"
+onClose: function(){
+alert('Window closed.');
+window.location="https://cacibubiashiecentral.org/";
+},
+callback: function(response){
+var message = 'Payment complete! Reference: ' + response.reference;
+alert(message);
+window.location="https://cacibubiashiecentral.org/";
+}
+});
+handler.openIframe();
+}
+}
+</script>
+ </body>
+</html>
